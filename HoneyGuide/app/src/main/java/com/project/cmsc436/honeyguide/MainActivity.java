@@ -153,4 +153,15 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         chirpConnect.stop();
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        chirpConnect.stop();
+        try {
+            chirpConnect.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
