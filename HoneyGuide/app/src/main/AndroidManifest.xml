@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.project.cmsc436.honeyguide">
 
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -34,7 +40,13 @@
             android:label="@string/list_pieces" />
         <activity
             android:name=".ShowPiece"
-            android:label="@string/show_piece" />
+            android:label="@string/show_piece">
+        </activity>
     </application>
+
+
+
+
+
 
 </manifest>
