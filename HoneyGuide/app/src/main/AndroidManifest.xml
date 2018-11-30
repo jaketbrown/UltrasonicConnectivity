@@ -5,11 +5,14 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/add_temp"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".WelcomePage"
+            android:label="@string/welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +20,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListPiecesView"
-            android:label="@string/list_pieces">
-        </activity>
+            android:name=".defaultPiece"
+            android:label="@string/defaultPiece" />
+        <activity
+            android:name=".artPiece"
+            android:label="@string/artPiece" />
 
         <activity
+            android:name=".MainActivity"
+            android:label="@string/add_temp"/>
+        <activity
+            android:name=".ListPiecesView"
+            android:label="@string/list_pieces" />
+        <activity
             android:name=".ShowPiece"
-            android:label="@string/show_piece">
-        </activity>
+            android:label="@string/show_piece" />
     </application>
 
 </manifest>
