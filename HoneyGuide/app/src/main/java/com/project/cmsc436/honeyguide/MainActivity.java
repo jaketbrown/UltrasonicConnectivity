@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     /** Items entered by the user is stored in this ArrayList variable */
     ArrayList<String> list = new ArrayList<String>();
 
-    private String TAG = "Honeyguide: ";
+    private String TAG = "Honeyguide-Debug: ";
     private final int RESULT_REQUEST_RECORD_AUDIO = 1;
 
     ConnectEventListener connectEventListener;
