@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         };
-
+        chirpConnect.setListener(connectEventListener);
         chirpConnect.start();
 
     }
